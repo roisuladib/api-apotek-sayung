@@ -1,0 +1,38 @@
+### API APOTEK
+
+### index
+GET http://localhost:3000
+
+### *
+GET http://localhost:3000/wkwkw
+
+### get Asset
+GET http://localhost:3000/assets
+### Delete Asset
+DELETE http://localhost:3000/assets/3
+
+### get Users
+GET http://localhost:3000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywibmFtZSI6IkFtYXIgU2V0eWF3YW4iLCJlbWFpbCI6ImFtYXJAZ21haWwuY29tIiwiaWF0IjoxNjU3NTIwNjA1LCJleHAiOjE2NTc1MjA2NjV9.hY7aBjwGSnEXz7DRHwapBigMcsbz-qxEVCcoHCced2w
+### register Users
+POST http://localhost:3000/register
+Content-Type: application/json
+
+{
+   "name": "Amar Setyawan",
+   "email": "amar@gmail.com",
+   "password": "asemkecut",
+   "confirm_password": "asemkecut"
+}
+### login Users
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+   "email": "amar@gmail.com",
+   "password": "asemkecut"
+}
+### refreshToken Users
+GET http://localhost:3000/token
+
+
